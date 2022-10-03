@@ -16,7 +16,7 @@
 2. 
 3. Il faut installer le paquet lvm2 pour pouvoir utiliser `pvcreate /dev/sdb1`
 4. `vgcreate vg01 /dev/sdb1` permet de créer le groupe de volume vg01
-5. 
+5. `lvcreate -l 100%FREE vg01 lvData` crée un volume logique nomé lvData occupant l'intégralité de l'espace disque disponible
 6. 
 7. 
 8. 
